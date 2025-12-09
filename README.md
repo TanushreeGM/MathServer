@@ -95,7 +95,7 @@ math.html
             </form>
         </div>
         <footer>
-            Devoloped by Tanushree G
+            Developed by Tanushree G
         </footer>
     </body>
 </html>
