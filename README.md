@@ -102,6 +102,8 @@ math.html
 
 ```
 ```
+views.py
+
 from django.shortcuts import render
 
 def efficiency(request):
@@ -112,6 +114,17 @@ def efficiency(request):
     print("Fuel consumed=",f)
     print("Mileage=",m)
     return render(request,'mathapp/math.html',{'D':D,'f':f,'m':m})
+
+
+urls.py
+
+from django.contrib import admin
+from django.urls import path
+from mathapp import views
+
+urlpatterns= [path('admin/', admin.site.urls),
+path('',views.efficiency,name='efficiency'),]
+
 
 ```
 
